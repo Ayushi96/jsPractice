@@ -17,6 +17,10 @@ console.log(sentence);
     return sentence;
 }
 
+function reverseWords(sentence) {
+    // Your implementation
+    return sentence.split('/(\s+)/').map(each => each.trim() ? each.split('').reverse().join('') : each).join('');
+}
 
 
 reverseWords("Hello world!");
